@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "buildAsciiGame",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/AsciiGame/AsciiGame.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
