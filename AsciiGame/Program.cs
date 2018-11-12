@@ -14,15 +14,7 @@ namespace AsciiGame
 #   
 ### 
             ";
-
-            string B = @"
-##  
-# # 
-##  
-# # 
-##        
-            ";
-            Console.Write (E + " " +B);
+            Console.Write (E);
         }
     }
 }
