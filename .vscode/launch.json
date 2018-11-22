@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Shadows Knight (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildShadowsKnight",
+            "program": "${workspaceFolder}/ShadowsKnight/bin/Debug/netcoreapp2.1/ShadowsKnight.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
             "name": ".NET Core Launch Ascii (console)",
             "type": "coreclr",
             "request": "launch",

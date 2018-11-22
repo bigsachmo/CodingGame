@@ -10,6 +10,16 @@
                 "${workspaceFolder}/AsciiGame/AsciiGame.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "buildShadowsKnight",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/ShadowsKnight/ShadowsKnight.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }
