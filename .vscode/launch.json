@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Shadows Knight (console)",
+            "name": "Shadows Knight (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "buildShadowsKnight",
@@ -13,17 +13,17 @@
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
-            "console": "internalConsole"
+            "console": "integratedTerminal"
         },
         {
-            "name": ".NET Core Launch Ascii (console)",
+            "name": "Ascii (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "buildAsciiGame",
             "program": "${workspaceFolder}/AsciiGame/bin/Debug/netcoreapp2.1/AsciiGame.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart"
         }
