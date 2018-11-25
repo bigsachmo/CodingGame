@@ -5,6 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "MimeType (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildMimeType",
+            "program": "${workspaceFolder}/MimeType/bin/Debug/netcoreapp2.1/MimeType.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Chuck Norris Encoding (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildChuck",
+            "program": "${workspaceFolder}/ChuckNorrisEncoding/bin/Debug/netcoreapp2.1/ChuckNorrisEncoding.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Shadows Knight (console)",
             "type": "coreclr",
             "request": "launch",
