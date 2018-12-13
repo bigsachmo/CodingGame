@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MimeType (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildMimeType",
+            "program": "${workspaceFolder}/MimeType/bin/Debug/netcoreapp2.1/MimeType.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Chuck Norris Encoding (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildChuck",
+            "program": "${workspaceFolder}/ChuckNorrisEncoding/bin/Debug/netcoreapp2.1/ChuckNorrisEncoding.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Shadows Knight (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildShadowsKnight",
+            "program": "${workspaceFolder}/ShadowsKnight/bin/Debug/netcoreapp2.1/ShadowsKnight.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Ascii (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildAsciiGame",
+            "program": "${workspaceFolder}/AsciiGame/bin/Debug/netcoreapp2.1/AsciiGame.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
