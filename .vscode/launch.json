@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            
+            "name": "Enigma (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildEnigma",
+            "program": "${workspaceFolder}/Enigma/bin/Debug/netcoreapp2.1/Enigma.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+        {
+            
             "name": "MimeType (console)",
             "type": "coreclr",
             "request": "launch",

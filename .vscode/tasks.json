@@ -2,6 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "buildEnigma",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Enigma/Enigma.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "buildMimeType",
             "command": "dotnet",
             "type": "process",
@@ -39,7 +49,8 @@
                 "build",
                 "${workspaceFolder}/ChuckNorrisEncoding/ChuckNorrisEncoding.csproj"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+
         }
     ]
 }
