@@ -1,5 +1,6 @@
 using System;
 using NUnit.Framework;
+using RugbyScore;
 
 
 
@@ -11,8 +12,9 @@ namespace RugbyScoreUT
        [Test]
        public void Test12() 
        {
-            Console.WriteLine("Display test");
-            Assert.IsTrue(true);
+            string result = ComputeRugbyScore.ComputeScore(12);
+            string expectedResult = @"0 0 4" + System.Environment.NewLine + "2 1 0";
+            Assert.AreEqual(result, expectedResult);
        }
     }
 }
