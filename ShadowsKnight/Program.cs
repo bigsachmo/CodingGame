@@ -6,7 +6,7 @@ namespace ShadowsKnight
     {
         static void Main(string[] args)
         {
-            string[] inputs;
+            //string[] inputs;
             // inputs = Console.ReadLine().Split(' ');
             // int W = int.Parse(inputs[0]); // width of the building.
             // int H = int.Parse(inputs[1]); // height of the building.
@@ -32,7 +32,7 @@ namespace ShadowsKnight
             {
                 Console.Error.WriteLine("Enter Movement: ");
                 string bombDir = Console.ReadLine(); // the direction of the bombs from batman's current location (U, UR, R, DR, D, DL, L or UL)
-                int[] newBuilding = GetNewBuilding(bombDir, new int[]{ minX, minY, W,H}, new int[] {X0,Y0});
+                int[] newBuilding = GetNewBuilding (bombDir, new int[]{ minX, minY, W,H}, new int[] {X0,Y0});
                 
                 minX = newBuilding[0];
                 minY = newBuilding[1];
