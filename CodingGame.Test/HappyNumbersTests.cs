@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace CodingGame.Test
@@ -56,6 +58,14 @@ namespace CodingGame.Test
         {
             string s = HappyNumbers.Program.ComputeNextNumbersFull("697719833245520439");
             Assert.AreNotEqual(s, "1");
+
+        }
+
+        [Test]
+        public void ComputeNextNumber6()
+        {
+            string number = "23";
+            string a = number.Sum(c => Math.Pow(c - '0', 2)).ToString();
 
         }
 
