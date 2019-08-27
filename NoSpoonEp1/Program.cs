@@ -35,18 +35,53 @@ namespace NoSpoonEp1
                     {
                         string rightPoint = string.Empty;
                         string downPoint = string.Empty;
-                        if (xx == X - 1 || Grid[xx + 1 , yy].Equals('.')) { rightPoint = " -1 -1"; }
-                        else { rightPoint = string.Format(" {0} {1}", xx + 1, yy); };
 
-                        if (yy == Y - 1 || Grid[xx, yy + 1 ].Equals('.')) { downPoint = " -1 -1"; }
-                        else { downPoint = string.Format(" {0} {1}", xx, yy + 1); };
+                        //Have to find next right point
+                        int nextRight = FindNextRightPoint(xx,yy);
+                        if (nextRight == -1)
+                        {
+                            rightPoint = " -1 -1";
+                        }
+                        else
+                        { rightPoint = string.Format(" {0} {1}", nextRight, yy); }
 
+                        int nextDown = FindNextDownPoint(xx, yy);
+                        if (nextDown == -1)
+                        {
+                            downPoint = " -1 -1";
+                        }
+                        else
+                        { downPoint = string.Format(" {0} {1}", xx, nextDown); }
+
+                        //Have to find next down point
+                       
                         OutPut.AppendLine(string.Format("{0} {1}{2}{3}", xx, yy, rightPoint, downPoint));
                     }
                     
                 }
 
             }
+        }
+
+        private static int FindNextDownPoint(int currentX, int currentY)
+        {
+            for (int i = currentY + 1; i < Y; i++)
+            {
+                if (Grid[currentX, i].Equals('0')) { return i; }
+                if (i == Y - 1) { return -1; }
+
+            }
+            return -1;
+        }
+
+        private static int FindNextRightPoint(int currentX, int currentY)
+        {
+            for (int i = currentX + 1; i < X; i++)
+            {
+                if (Grid[i, currentY].Equals('0')) { return i; }
+                if (i == X - 1) { return -1; }
+            }
+            return -1; 
         }
 
         public static void FillGridWithLine(string line, int height)
